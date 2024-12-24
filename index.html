@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talabalar Ro'yxati</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .form-container, .table-container {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input {
+            width: calc(33% - 10px);
+            padding: 8px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #218838;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        table th {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-edit {
+            background-color: #ffc107;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-edit:hover {
+            background-color: #e0a800;
+        }
+        .btn-delete {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-delete:hover {
+            background-color: #c82333;
+        }
+        table:hover{
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Talabalar Ro'yxati</h1>
+    <div class="form-container">
+        <button style="background-color: #28a745; color: white; width: 600px;">Yangi talaba qo`shish</button><br>
+        <label for="">Ism:</label><br>
+        <input type="text" placeholder="Ism"><br>
+        <label style="text-align: 20px;">Familiya:</label><br>
+        <input type="text" placeholder="Familiya"><br>
+        <label for="">Yosh:</label><br>
+        <input type="number" placeholder="Yosh"><br>
+        <button style="width: 600px; border: none;" type="submit">Qo'shish</button>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Ism</th>
+                    <th>Familiya</th>
+                    <th>Yosh</th>
+                    <th>Harakatlar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jasur</td>
+                    <td>Qosimov</td>
+                    <td>20</td>
+                    <td>
+                        <button class="btn-edit">Tahrirlash</button>
+                        <button class="btn-delete">O'chirish</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ali</td>
+                    <td>Valiyev</td>
+                    <td>22</td>
+                    <td>
+                        <button class="btn-edit">Tahrirlash</button>
+                        <button class="btn-delete">O'chirish</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
